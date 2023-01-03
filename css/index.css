@@ -1,0 +1,240 @@
+/* Global styles ============= */
+:root {
+  --nav-yellow: #FFE000;
+  --link-yellow: #fdcc52;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+a {
+  color: var(--link-yellow);
+  transition: all .35s;
+}
+
+a:hover, a:focus {
+  color: var(--link-yellow);
+}
+
+hr {
+  max-width: 100px;
+  margin: 25px auto 0;
+  border-width: 1px;
+  border-color: rgba(34, 34, 34, 0.1);
+}
+
+hr.light {
+  border-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.bg-black {  
+  background-color: #000!important;  
+}  
+
+section {
+  padding: 100px 0;
+}
+
+section h2 {
+  font-size: 50px;
+}
+
+/* Navigation bar styles ============= */
+#mainNav{
+  /* border-color: rgba(34, 34, 34, 0.05); */
+  background-color: #64a19d;
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  width: 100%;
+}
+
+#mainNav .navbar-brand {
+  color: var(--nav-yellow);
+  text-shadow: 0 0 4px #313131, 0 0 4px #313131, 0 0 4px #313131, 0 0 4px #313131;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+#mainNav .navbar-nav {
+  margin-left: auto;
+  margin-right: 0 !important;
+}
+
+#mainNav .nav-item {
+  /* color: #FFFFFF; */
+}
+
+header.masthead {
+  background-image: url("../images/bg-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 100px;
+
+}
+
+header.masthead .header-content {
+  max-width: 500px;
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+}
+
+header.masthead .header-content h1 {
+  font-size: 30px;
+}
+
+header.masthead .header-content .btn {
+  border: 1px solid white;
+  border-radius: 30px;
+  text-transform:uppercase; 
+  color: white;  
+}
+
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active, .open>.dropdown-toggle.btn-outline {
+  background-color: var(--nav-yellow);
+  border-color: var(--nav-yellow); /*set the color you want here*/
+}
+
+header.masthead .device-container {
+  max-width: 325px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header.masthead img {
+  border-radius: 3px;
+}
+
+section.download {
+  position: relative;
+  padding: 150px 0;
+  background-color: #FDC949;
+}
+
+.section.heading {
+  font-size: 100px;
+}
+
+.section.heading p {
+  font-size: 26px;
+}
+
+.badge-link img {
+  height: 60px;
+}
+
+section.testimonials {
+  text-align: center;
+}
+
+section.testimonials h5 {
+  padding-top: 20px;
+}
+
+section.testimonials .testimonial-item img {
+  width: 200px;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+#signup {
+  padding: 10rem 0;
+  background-image: url("../images/SF.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../images/sf.svg");;
+}
+
+#signup h2 {
+  color: white;
+}
+
+#signup input {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  padding: 20px;
+  height: auto;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+
+#signup button {
+  border-radius: 30px;
+  padding: 1.25rem;
+  margin: 10px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase4
+  font-size: 80%;
+}
+
+.contact-section .card {
+  text-align: center;
+  /* font-size: 80%; */
+  color: gray;
+  border-bottom: 4px solid green;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.contact-section h4 {
+  font-size: 0.8rem;
+  /* text-transform: uppercase; */
+  /* font-size: 120%;  */
+}
+
+.contact-section hr {
+  border: green solid 2px;
+  width: 40px;
+}
+
+
+.social i {
+  /* color: darkgray; */
+  background: gray;
+  border-radius: 50%;
+}
+
+.social a {
+  color: darkgray;
+}
+
+.contact-section .social a:hover {
+  color: white;
+}
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #222222;
+}
+
+
